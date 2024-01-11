@@ -58,7 +58,7 @@ public class Account {
 
 	public void payMonthlyFee() {
 		if (!isWithdrawCovered(10)) {
-			String message = String.format("Amount %s cannot be withdrawn", amount);
+			String message = String.format("Amount %s cannot be withdrawn", 10);
 			throw new IllegalArgumentException(message);
 		}
 		balance -= 10;
